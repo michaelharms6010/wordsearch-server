@@ -1,3 +1,10 @@
 # Backend for PT11 word-find app
 
-This currently supports authentication endpoints and an (as yet) unrestricted database for users to add their own lists of words.
+TL hours exercise for epic reps 
+
+- Rebuild server.js
+- Rebuild users-router.js
+- Rebuild wordlists-router.js
+- Complete index.js
+
+When complete, this should support full CRUD operations for users as well as wordlists.
