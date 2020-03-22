@@ -1,26 +1,15 @@
 
 const router = require('express').Router();
-const Users = require('./wordlists-model');
+const Wordlists = require('./wordlists-model');
 
  
-router.get('/',  (req, res) => {
+//get all
 
-});
+//get by id
 
-router.get('/:id',  (req, res) => {
+//post
 
-});
+// put by id
 
-router.post('/',  (req, res) => {
+// delete by id
 
-});
-
-router.put('/:id', (req, res) => {
-
-});
-
-router.delete('/:id', (req, res) => {
-
-})
-
-module.exports = router;

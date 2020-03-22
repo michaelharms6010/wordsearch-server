@@ -1,25 +1,10 @@
 const express = require("express");
-const cors = require("cors");
-const helmet = require("helmet");
-const morgan = require("morgan");
 
-const userRouter = require("./users/users-router")
-const authRouter = require("./auth/auth-router")
-const wordlistsRouter = require("./wordlists/wordlists-router")
+// import middleware packages
 
-const server = express();
 
-server.use(helmet());
-server.use(cors());
-server.use(express.json());
-server.use(morgan("dev"));
+// import routers (there are three)
 
-server.use("/auth", authRouter)
-server.use("/users", userRouter)
-server.use("/wordlists", wordlistsRouter)
 
-server.get("/", (req,res) => {
-    res.json({message: "Server is up and running"})
-})
+// apply middleware
 
-module.exports = server;
